@@ -1,6 +1,8 @@
 import React from "react";
 import "../styling/footer.css";
-
+import { FaInstagram } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer>
@@ -9,17 +11,11 @@ const Footer = () => {
           <h2>Cats 4 Life</h2>
         </span>
         <div className="socialMedia">
-          <ul>
-            <li>
-              <a href = "https://en-gb.facebook.com/" target = "_blank">Facebook</a>
-            </li>
-            <li>
-              <a href = "https://twitter.com/?lang=en-gb" target = "_blank">Twitter</a>
-            </li>
-            <li>
-              <a href = "https://www.instagram.com/" target = "_blank">Instagram</a>
-            </li>
-          </ul>
+        
+                <FaFacebook className='icon' />
+                <FaInstagram className='icon' />
+                <FaTwitter className='icon' />
+                            
         </div>
       </div>
     </footer>
