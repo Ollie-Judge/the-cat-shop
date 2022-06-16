@@ -11,10 +11,11 @@ const Navbar = ({ setShow, size }) => {
       <nav>
         <div className="shoppingContainer">
           <span className="Cat4Life" onClick={() => setShow(true)}>
-            Shop
+            Keep Shopping
             </span>
+            <br />
 
-          <div className="shoppingCart" onClick={() => setShow(false)}>
+          <div className="Basket" onClick={() => setShow(false)}>
             <span>
               <i class="fas fa-shopping-basket"></i>
             </span>

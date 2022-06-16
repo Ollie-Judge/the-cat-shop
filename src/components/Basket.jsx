@@ -26,7 +26,7 @@ const Basket = ({ basket, setBasket, handleChange }) => {
       {basket.map((item) => (
         <div className="basketWrapper" key={item.id}>
           <div className="basketImage">
-            <img src={item.img} alt="basket images" />
+            <img src={item.img} alt="" />
             <h2>{item.title}</h2>
           </div>
 
@@ -39,13 +39,13 @@ const Basket = ({ basket, setBasket, handleChange }) => {
           </div>
           <div>
             <span>£{item.price}</span>
-            <button onClick={() => handleRemove(item.id)}>Delete</button>
+            <button onClick={() => handleRemove(item.id)}>Remove</button>
           </div>
         </div>
       ))}
 
       <div className="totalCost">
-        <span>Total Cost {price}.00</span>
+        <span>Total Cost £{price}.00</span>
       </div>
     </div>
   );
