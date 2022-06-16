@@ -10,7 +10,7 @@ const Basket = ({ basket, setBasket, handleChange }) => {
     handlePrice();
   };
 
-  {/*Total cost*/}
+  
   const handlePrice = () => {
     let cost = 0;
     basket.map((item) => (cost += item.amount * item.price));

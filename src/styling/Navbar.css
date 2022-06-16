@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
 * {
   margin: 0;
-  padding: 0;
+  padding: 0;  
+}
+
+.title{
+  font-family: 'Fascinate', cursive;
+  font-size: 3rem;
+
 }
 
 .navbarContainer {
-  background-color: green;
+  background-color: royalblue;
   width: 100%;
   display: flex;
   flex-direction: center;
@@ -23,20 +30,33 @@
 }
 
 
-.Cat4Life {
+.keepShopping {
   font-size: 1rem;
   font-weight: bold;
-  color: rgb(192, 185, 255);
+  color: rgb(0, 0, 0);
   font-family: cursive;
   cursor: pointer;
 }
+
+.keepShopping:hover{
+  color: peachpuff;
+  font-size: 1.1rem;
+}
+
 .Basket {
   cursor: pointer;  
 }
+
 .Basket span:nth-child(1) {  
   font-size: 2rem;
-  color: palegoldenrod;
+  color: rgb(0, 0, 0);
 }
+
+.Basket span:nth-child(1):hover{
+  font-size: 2.1rem;
+  color: peachpuff;
+}
+
 .Basket span:nth-child(2) {
   padding: 0 3px;
   background-color: royalblue;
