@@ -1,0 +1,12 @@
+.cartButton {
+    cursor: pointer;
+    box-shadow: 2px 2px black;
+  }
+  
+  .cartButton:hover {
+    background-color: #66c1e5;
+  }
+  
+  .cartButton:active {
+    transform: translateY(2px);
+  }

@@ -12,7 +12,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
   }
-  .cards {
+  .cat-cards {
     width: 250px;    
     padding: 20px;
     
@@ -32,7 +32,7 @@
     box-shadow: 0 10px 10px 10px rbga(0, 0, 0, 1);
     cursor: pointer;
   }
-  .image_box img {
+  .catPhoto img {
     display: flex;
     border-radius: 5px;
     border-style: groove;
@@ -43,7 +43,7 @@
     object-fit: cover;
   }
 
-  .image_box img:hover {
+  .catPhoto img:hover {
     display: flex;
     border-radius: 15px;
     border-style: groove;
@@ -54,18 +54,18 @@
     object-fit: cover;
   }
   
-  .details p:nth-child(1) {
+  .info p:nth-child(1) {
     font-weight: bold;
   }
-  .details p:nth-child(2) {
+  .info p:nth-child(2) {
     color: grey;
     font-size: 0.8rem;
   }
-  .details p:nth-child(3) {
+  .info p:nth-child(3) {
     font-weight: bolx;
     color: grey;
   }
-  .details button {
+  .info button {
     padding: 5px 10px;
     border: none;
     font-weight: bold;

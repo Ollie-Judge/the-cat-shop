@@ -1,7 +1,7 @@
 import React from "react";
 import "../styling/Navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ setShow, size }) => {
   return (
     <div className="navbarContainer">
       <div className="titleContainer">
@@ -10,13 +10,15 @@ const Navbar = () => {
 
       <nav>
         <div className="shoppingContainer">
-          <span>Shop</span>
+          <span className="Cat4Life" onClick={() => setShow(true)}>
+            Shop
+            </span>
 
-          <div className="shoppingCart">
+          <div className="shoppingCart" onClick={() => setShow(false)}>
             <span>
               <i class="fas fa-shopping-basket"></i>
             </span>
-            <span>0</span>
+            <span>{size}</span>
           </div>
         </div>
       </nav>

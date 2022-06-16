@@ -1,35 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./components/Navbar";
-
+import Basket from "./components/Basket"
 import Product from "./components/Product";
 import Footer from "./components/Footer";
 
 const App = () => {
     const [show, setShow] = useState(true);
-    const [cart, setCart] = useState([]);
+    const [basket, setBasket] = useState([]);
   
     const handleClick = (item) => {
-      if (cart.indexOf(item) !== -1) return;
-      setCart([...cart, item]);
+      if (basket.indexOf(item) !== -1) return;
+      setBasket([...basket, item]);
     };
   
     const handleChange = (item, d) => {
-      const ind = cart.indexOf(item);
-      const arr = cart;
+      const ind = basket.indexOf(item);
+      const arr = basket;
       arr[ind].amount += d;
   
       if (arr[ind].amount === 0) arr[ind].amount = 1;
-      setCart([...arr]);
+      setBasket([...arr]);
     };
   
      
     return (
       <React.Fragment>
-        <Navbar setShow={setShow} size={cart.length} />
+        <Navbar setShow={setShow} size={basket.length} />
         {show ? (
           <Product handleClick={handleClick} />
         ) : (
-          <Basket cart={cart} setCart={setCart} handleChange={handleChange} />
+          <Basket basket={basket} setBaskett={setBasket} handleChange={handleChange} />
         )}
   
         <Footer />
