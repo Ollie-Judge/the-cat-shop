@@ -4,7 +4,7 @@ import "../styling/Navbar.css";
 const Navbar = () => {
   return (
     <div className="navbarContainer">
-      <div>
+      <div className="titleContainer">
         <h2 className="title">Cats 4 Life</h2>
       </div>
 
