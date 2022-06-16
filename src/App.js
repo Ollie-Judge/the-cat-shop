@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from "./components/Navbar";
+
 import Product from "./components/Product";
+import Footer from "./components/Footer";
 
 const App = () => {
     const [show, setShow] = useState(true);
@@ -35,4 +37,26 @@ const App = () => {
     );
   };
   
+
+
+
+const App = () => {
+  return (
+    <React.Fragment>
+      <Navbar />
+      <div>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+        <h1>hello</h1>
+      </div>
+      <Footer />
+    </React.Fragment>
+  );
+};
+
+
 export default App;

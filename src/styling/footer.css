@@ -1,0 +1,34 @@
+.footer-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(54, 125, 54);
+  padding-top: 25px;
+  height: 90px;
+  width: 100%;
+  margin-top: 80px;
+}
+
+.footer-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.catsLogo {
+  margin-left: 25px;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+.socialMedia ul li {
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+.socialMedia {
+  margin-right: 25px;
+}
