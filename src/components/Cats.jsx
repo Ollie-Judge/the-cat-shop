@@ -1,49 +1,45 @@
 import { faker } from '@faker-js/faker'
 
+
 const Cats = [
   {
     id: 1,
-
     name: faker.name.firstName(),
     breed: faker.animal.cat(),
     price: faker.commerce.price(80, 300, 0, ""),
-    img: faker.image.cats(),
+    img: "https://cdn2.thecatapi.com/images/bh2.jpg",
     amount: 1,
   },
   {
     id: 2,
-
     name: faker.name.firstName(),
     breed: faker.animal.cat(),
     price: faker.commerce.price(80, 300, 0, ""),
-    img: faker.image.cats(2),
+    img: "https://cdn2.thecatapi.com/images/1cq.jpg",
     amount: 1,
   },
   {
     id: 3,
-
     name: faker.name.firstName(),
     breed: faker.animal.cat(),
     price: faker.commerce.price(80, 300, 0, ""),
-    img: faker.image.cats(3),
+    img: "https://cdn2.thecatapi.com/images/5HsSLvDP8.jpg",
     amount: 1,
   },
   {
     id: 4,
-
     name: faker.name.firstName(),
     breed: faker.animal.cat(),
     price: faker.commerce.price(80, 300, 0, ""),
-    img: faker.image.cats(4),
+    img: "https://cdn2.thecatapi.com/images/e7q.jpg",
     amount: 1,
   },
   {
     id: 5,
-
     name: faker.name.firstName(),
     breed: faker.animal.cat(),
     price: faker.commerce.price(80, 300, 0, ""),
-    img: faker.image.cats(5),
+    img: "https://cdn2.thecatapi.com/images/z3CV7NACl.jpg",
     amount: 1,
   },
   {
@@ -51,16 +47,15 @@ const Cats = [
     name: faker.name.firstName(),
     breed: faker.animal.cat(),
     price: faker.commerce.price(80, 300, 0, ""),
-    img: faker.image.cats(6),
+    img: "https://cdn2.thecatapi.com/images/G2Bjld1gJ.jpg",
     amount: 1,
   },
   {
     id: 7,
-
     name: faker.name.firstName(),
     breed: faker.animal.cat(),
     price: faker.commerce.price(80, 300, 0, ""),
-    img: faker.image.cats(7),
+    img: "https://cdn2.thecatapi.com/images/ifSXadgxQ.jpg",
     amount: 1,
   },
   {
@@ -68,34 +63,31 @@ const Cats = [
     name: faker.name.firstName(),
     breed: faker.animal.cat(),
     price: faker.commerce.price(80, 300, 0, ""),
-    img: faker.image.cats(8),
+    img: "https://cdn2.thecatapi.com/images/c8j.jpg",
     amount: 1,
   },
   {
     id: 9,
-
     name: faker.name.firstName(),
     breed: faker.animal.cat(),
     price: faker.commerce.price(80, 300, 0, ""),
-    img: faker.image.cats(9),
+    img: "https://cdn2.thecatapi.com/images/MTgzMDcyMA.jpg",
        amount: 1,
   },
   {
     id: 10,
-
     name: faker.name.firstName(),
     breed: faker.animal.cat(),
     price: faker.commerce.price(80, 300, 0, ""),
-    img: faker.image.cats(10),
+    img: "https://cdn2.thecatapi.com/images/3fh.jpg",
     amount: 1,
   },
   {
     id: 11,
-
     name: faker.name.firstName(),
     breed: faker.animal.cat(),
     price: faker.commerce.price(80, 300, 0, ""),
-    img: faker.image.cats(11),
+    img: "https://cdn2.thecatapi.com/images/2jh.jpg",
     amount: 1,
   },
   {
@@ -103,7 +95,7 @@ const Cats = [
     name: faker.name.firstName(),
     breed: faker.animal.cat(),
     price: faker.commerce.price(80, 300, 0, ""),
-    img: faker.image.cats(12),
+    img: "https://cdn2.thecatapi.com/images/9dh.jpg",
     amount: 1,
   },
 ];
