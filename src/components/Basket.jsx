@@ -1,13 +1,24 @@
+import React, { useState, useEffect } from "react";
 import "../styling/Basket.css";
 
-const Basket = ({ basket, setBasket, handleChange, price }) => {
-
+const Basket = ({ basket, setBasket, handleChange }) => {
+  const [price, setPrice] = useState(0);
 
   const handleRemove = (id) => {
     const arr = basket.filter((item) => item.id !== id);
     setBasket(arr);
-    ;
+    handlePrice();
   };
+
+  const handlePrice = () => {
+    let cost = 0;
+    basket.map((item) => (cost += item.amount * item.price));
+    setPrice(cost);
+  };
+
+  useEffect(() => {
+    handlePrice();
+  });
 
   return (
     <div className="container">
@@ -23,7 +34,11 @@ const Basket = ({ basket, setBasket, handleChange, price }) => {
             <button onClick={() => handleChange(item, +1)}>+</button>
             <button>{item.amount}</button>
             {/*decrement ammount*/}
-            <button onClick={() => (item <= 0 ? (item = 0) : handleChange(item, -1))}>-</button>
+            <button
+              onClick={() => (item <= 0 ? (item = 0) : handleChange(item, -1))}
+            >
+              -
+            </button>
           </div>
           <div>
             <span>£{item.price}</span>
