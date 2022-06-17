@@ -22,7 +22,7 @@ const Basket = ({ basket, setBasket, handleChange }) => {
   });
 
   return (
-    <div>
+    <div className="container">
       {basket.map((item) => (
         <div className="basketWrapper" key={item.id}>
           <div className="basketImage">
