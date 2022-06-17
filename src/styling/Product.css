@@ -1,62 +1,62 @@
-  section {
-    border-radius: 360px;
-    background: url('/src/assets/image1.jpg') no-repeat center center/cover;
-    width: 90%;
-    margin: auto;
-    margin-top: 5%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-  }
+section {
+  border-radius: 360px;
+  background: url("https://i.pinimg.com/originals/a1/04/d3/a104d36955c78f0e7e857ce85965c0df.jpg");
+  background-repeat: no-repeat;
+  background-position: fixed;
+  width: 90%;
+  margin: auto;
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+}
 
-  .cat-cards {
-    width: 250px;    
-    padding: 20px;
-    
-  }
-    
-  .cards:hover {
-    
-    box-shadow: 0 10px 10px 10px rbga(0, 0, 0, 1);
-    cursor: pointer;
-  }
-  .catPhoto img {
-    display: flex;
-    border-radius: 5px;
-    border-style: groove;
-    border-color: pink;
-    border-width: 10px;
-    width: 200px;
-    height: 250px;
-    object-fit: cover;
-  }
+.cat-cards {
+  width: 250px;
+  padding: 20px;
+}
 
-  .catPhoto img:hover {
-    display: flex;
-    border-radius: 15px;
-    border-style: groove;
-    border-color: royalblue;
-    border-width: 5px;
-    width: 300px;
-    height: 350px;
-    object-fit: cover;
-  }
-  
-  .info p:nth-child(1) {
-    font-weight: bold;
-  }
-  .info p:nth-child(2) {
-    color: grey;
-    font-size: 0.8rem;
-  }
-  .info p:nth-child(3) {
-    font-weight: bolx;
-    color: grey;
-  }
-  .info button {
-    padding: 5px 10px;
-    border: none;
-    font-weight: bold;
-    background-color: skyblue;
-    outline: none;
-  }
+.cards:hover {
+  box-shadow: 0 10px 10px 10px rbga(0, 0, 0, 1);
+  cursor: pointer;
+}
+.catPhoto img {
+  display: flex;
+  border-radius: 5px;
+  border-style: groove;
+  border-color: pink;
+  border-width: 10px;
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.catPhoto img:hover {
+  display: flex;
+  border-radius: 15px;
+  border-style: groove;
+  border-color: royalblue;
+  border-width: 5px;
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.info p:nth-child(1) {
+  font-weight: bold;
+}
+.info p:nth-child(2) {
+  color: grey;
+  font-size: 0.8rem;
+}
+.info p:nth-child(3) {
+  font-weight: bolx;
+  color: grey;
+}
+.info button {
+  padding: 5px 10px;
+  border: none;
+  font-weight: bold;
+  background-color: skyblue;
+  outline: none;
+}
