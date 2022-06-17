@@ -1,5 +1,7 @@
-import { useEffect, useState } from "react";
 import { faker } from "@faker-js/faker";
+
+const name = faker.name.firstName();
+const breed = faker.animal.cat();
 
 const Cats = [
   {
@@ -7,7 +9,6 @@ const Cats = [
     name: `${name}`,
     breed: `${breed}`,
     price: 89,
-    price: 209,
     img: "https://cdn2.thecatapi.com/images/f5.jpg",
     amount: 1,
   },
@@ -16,7 +17,6 @@ const Cats = [
     name: `${name}`,
     breed: `${breed}`,
     price: 98,
-    price: 349,
     img: "https://cdn2.thecatapi.com/images/fZS8WqaYm.jpg",
     amount: 1,
   },
@@ -25,7 +25,6 @@ const Cats = [
     name: `${name}`,
     breed: `${breed}`,
     price: 143,
-    price: 269,
     img: "https://cdn2.thecatapi.com/images/anf.jpg",
     amount: 1,
   },
@@ -34,7 +33,6 @@ const Cats = [
     name: `${name}`,
     breed: `${breed}`,
     price: 57,
-    price: 375,
     img: "https://cdn2.thecatapi.com/images/MjA3OTE1MA.jpg",
     amount: 1,
   },
@@ -43,7 +41,6 @@ const Cats = [
     name: `${name}`,
     breed: `${breed}`,
     price: 149,
-    price: 285,
     img: "https://cdn2.thecatapi.com/images/5nr.jpg",
     amount: 1,
   },
@@ -60,7 +57,6 @@ const Cats = [
     name: `${name}`,
     breed: `${breed}`,
     price: 693,
-    price: 589,
     img: "https://cdn2.thecatapi.com/images/and.jpg",
     amount: 1,
   },
@@ -77,7 +73,6 @@ const Cats = [
     name: `${name}`,
     breed: `${breed}`,
     price: 80,
-    price: 260,
     img: "https://cdn2.thecatapi.com/images/RHs33lRPC.jpg",
     amount: 1,
   },
@@ -86,7 +81,6 @@ const Cats = [
     name: `${name}`,
     breed: `${breed}`,
     price: 86,
-    price: 377,
     img: "https://cdn2.thecatapi.com/images/vKcrwdUwo.jpg",
     amount: 1,
   },
@@ -95,7 +89,6 @@ const Cats = [
     name: `${name}`,
     breed: `${breed}`,
     price: 120,
-    price: 299,
     img: "https://cdn2.thecatapi.com/images/kw9n_n4-X.jpg",
     amount: 1,
   },
@@ -108,6 +101,5 @@ const Cats = [
     amount: 1,
   },
 ];
-
 
 export default Cats;
