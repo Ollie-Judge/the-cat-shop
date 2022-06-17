@@ -10,7 +10,6 @@ const Basket = ({ basket, setBasket, handleChange }) => {
     handlePrice();
   };
 
-  
   const handlePrice = () => {
     let cost = 0;
     basket.map((item) => (cost += item.amount * item.price));
@@ -35,7 +34,11 @@ const Basket = ({ basket, setBasket, handleChange }) => {
             <button onClick={() => handleChange(item, +1)}>+</button>
             <button>{item.amount}</button>
             {/*decrement ammount*/}
-            <button onClick={() => (item <= 0 ? (item = 0) : handleChange(item, -1))}>-</button>
+            <button
+              onClick={() => (item <= 0 ? (item = 0) : handleChange(item, -1))}
+            >
+              -
+            </button>
           </div>
           <div>
             <span>£{item.price}</span>
