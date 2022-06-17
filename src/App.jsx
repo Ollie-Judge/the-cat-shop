@@ -29,7 +29,7 @@ const App = () => {
         {show ? (
           <Product handleClick={handleClick} />
         ) : (
-          <Basket basket={basket} setBaskett={setBasket} handleChange={handleChange} />
+          <Basket basket={basket} setBasket={setBasket} handleChange={handleChange} />
         )}
   
         <Footer />

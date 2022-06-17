@@ -1,3 +1,4 @@
+import {useEffect, useState} from "react";
 import { faker } from "@faker-js/faker";
 
 const name = faker.name.firstName();
