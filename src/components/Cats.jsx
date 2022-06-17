@@ -1,7 +1,5 @@
+import { useEffect, useState } from "react";
 import { faker } from "@faker-js/faker";
-
-const name = faker.name.firstName();
-const breed = faker.animal.cat();
 
 const Cats = [
   {
@@ -110,5 +108,6 @@ const Cats = [
     amount: 1,
   },
 ];
+
 
 export default Cats;
