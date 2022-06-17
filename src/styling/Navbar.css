@@ -5,6 +5,7 @@
 }
 
 .title{
+  background: linear-gradient(to right, royalblue, peachpuff) ;
   font-family: 'Fascinate', cursive;
   font-size: 3rem;
 

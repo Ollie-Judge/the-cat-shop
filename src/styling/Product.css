@@ -23,7 +23,7 @@ section {
 .catPhoto img {
   display: flex;
   border-radius: 5px;
-  border-style: groove;
+  box-shadow: 0px 10px 30px rgba(0,0,0, 0.5);
   border-color: pink;
   border-width: 10px;
   width: 200px;
@@ -31,27 +31,18 @@ section {
   object-fit: cover;
 }
 
-.catPhoto img:hover {
-  display: flex;
-  border-radius: 15px;
-  border-style: groove;
-  border-color: royalblue;
-  border-width: 5px;
-  width: 300px;
-  height: 350px;
-  object-fit: cover;
-}
-
 .info p:nth-child(1) {
   font-weight: bold;
 }
 .info p:nth-child(2) {
-  color: grey;
+  color: royalblue;
   font-size: 0.8rem;
+  font-weight: 450;
 }
 .info p:nth-child(3) {
   font-weight: bolx;
-  color: grey;
+  color: royalblue;
+  font-weight: 700;
 }
 .info button {
   padding: 5px 10px;
