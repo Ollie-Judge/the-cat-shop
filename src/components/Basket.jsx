@@ -1,13 +1,25 @@
+import React, { useState, useEffect } from "react";
 import "../styling/Basket.css";
 
-const Basket = ({ basket, setBasket, handleChange, price }) => {
-
+const Basket = ({ basket, setBasket, handleChange }) => {
+  const [price, setPrice] = useState(0);
 
   const handleRemove = (id) => {
     const arr = basket.filter((item) => item.id !== id);
     setBasket(arr);
-    ;
+    handlePrice();
   };
+
+  
+  const handlePrice = () => {
+    let cost = 0;
+    basket.map((item) => (cost += item.amount * item.price));
+    setPrice(cost);
+  };
+
+  useEffect(() => {
+    handlePrice();
+  });
 
   return (
     <div className="container">
