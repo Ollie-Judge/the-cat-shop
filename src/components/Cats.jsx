@@ -3,6 +3,7 @@ import { faker } from '@faker-js/faker'
 const Cats = [
   {
     id: 1,
+
     name: faker.name.firstName(),
     breed: faker.animal.cat(),
     price: faker.commerce.price(80, 300, 0, ""),
@@ -11,6 +12,7 @@ const Cats = [
   },
   {
     id: 2,
+
     name: faker.name.firstName(),
     breed: faker.animal.cat(),
     price: faker.commerce.price(80, 300, 0, ""),
@@ -19,6 +21,7 @@ const Cats = [
   },
   {
     id: 3,
+
     name: faker.name.firstName(),
     breed: faker.animal.cat(),
     price: faker.commerce.price(80, 300, 0, ""),
@@ -27,6 +30,7 @@ const Cats = [
   },
   {
     id: 4,
+
     name: faker.name.firstName(),
     breed: faker.animal.cat(),
     price: faker.commerce.price(80, 300, 0, ""),
@@ -35,6 +39,7 @@ const Cats = [
   },
   {
     id: 5,
+
     name: faker.name.firstName(),
     breed: faker.animal.cat(),
     price: faker.commerce.price(80, 300, 0, ""),
@@ -51,6 +56,7 @@ const Cats = [
   },
   {
     id: 7,
+
     name: faker.name.firstName(),
     breed: faker.animal.cat(),
     price: faker.commerce.price(80, 300, 0, ""),
@@ -67,14 +73,16 @@ const Cats = [
   },
   {
     id: 9,
+
     name: faker.name.firstName(),
     breed: faker.animal.cat(),
     price: faker.commerce.price(80, 300, 0, ""),
     img: faker.image.cats(9),
-    amount: 1,
+       amount: 1,
   },
   {
     id: 10,
+
     name: faker.name.firstName(),
     breed: faker.animal.cat(),
     price: faker.commerce.price(80, 300, 0, ""),
@@ -83,6 +91,7 @@ const Cats = [
   },
   {
     id: 11,
+
     name: faker.name.firstName(),
     breed: faker.animal.cat(),
     price: faker.commerce.price(80, 300, 0, ""),
