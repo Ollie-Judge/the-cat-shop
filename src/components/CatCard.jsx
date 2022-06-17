@@ -19,8 +19,14 @@ const CatCards = ({ item, handleClick }) => {
       whileHover={{
         scale: 1.2,
         textShadow: "0px 0px 8px rgb(255,255,255)",        
-        delay: 0.5,
+        originX: 0,
+        textColor: '#f8e112',
+        color: '#f8e112',
+        type: "spring",
+        damping: 25,
+        stiffness: 500,        
       }}
+      
     className="cat-cards">
       <div className="catPhoto">
         <img src={img} alt="" />
